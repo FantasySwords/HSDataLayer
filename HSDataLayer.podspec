@@ -17,15 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "HSDataLayer"
   s.version      = "0.0.1"
-  s.summary      = "将模型存储到sqlite数据库，可以为每个库指定不同的数据库，自动检测表字段的添加等，使用fmdb操作sqlite，保证线程安全。此为测试版本，可能会有效率和稳定性上的问题。"
+  s.summary      = "基于FMDB的模型存储工具."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "将模型存储到sqlite数据库，可以为每个库指定不同的数据库，自动检测表字段的添加等，使用fmdb操作sqlite，保证线程安全。"
 
   s.homepage     = "https://github.com/cnthinkcode/HSDataLayer"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -52,7 +51,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "何小健" => "hejianyuan@foxmail.com" }
+  s.author             = { "何小健" => "thinkcode@126.com" }
   # Or just: s.author    = "何小健"
   # s.authors            = { "何贱源" => "hejianyuan@foxmail.com" }
   # s.social_media_url   = "http://twitter.com/何贱源"
@@ -63,7 +62,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
