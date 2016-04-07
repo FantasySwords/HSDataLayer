@@ -1013,9 +1013,9 @@ static pthread_mutex_t hs_table_mutex = PTHREAD_MUTEX_INITIALIZER;
     }
     
     if (criteria.limit && criteria.offset) {
-        [sqlString appendFormat:@"limit %ld, %ld", criteria.offset, criteria.limit];
+        [sqlString appendFormat:@"limit %ld, %ld", (long) criteria.offset, (long) criteria.limit];
     }else if(criteria.limit) {
-        [sqlString appendFormat:@"limit %ld", criteria.limit];
+        [sqlString appendFormat:@"limit %ld", (long)criteria.limit];
     }else {
         NSAssert(0, @"You need to specify the value of limit");
     }
